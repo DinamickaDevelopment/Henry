@@ -1,0 +1,150 @@
+﻿/**************** 4-3-2015 *******************/
+.container{ width:960px; margin:0 auto; padding:0;}
+
+*,*:before,*:after{-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+html {height: 100%;}
+body {margin: 0; background-color: rgb(210, 4, 133); background-size: cover; height: 100%; color: #000000;font-family: sans-serif;}
+h1, h2, h3, h4 {font-weight: normal;}
+h1 {font-size: 1.4em; line-height: 1em;}
+h2 {font-size: 1.1em; margin-top:10px;}
+@font-face {
+    font-family: myriad;
+    src: url(myriad.OTF);
+}
+.header2 {background:#656565; height:45px; margin:0; padding:0; color: #fff; text-align: center;}
+#wrapper {height: 100%; width: 100%;}
+#intro {font-size: 1px;}
+#questionWrapper {background: none repeat scroll 0% 0% rgb(255, 255, 255); width: 92%; min-height: 460px; margin: 5px auto; padding: 20% 20%; border-radius: 15px; box-sizing: border-box; max-width: 350px;overflow:auto;}
+.answer {display: block; margin-bottom: 10px; margin-right: 20px; font-size: 1em; color: rgb(0,0,0); border: 2px solid rgb(0,0,0); background: none repeat scroll 0% 0% rgba(202, 202, 202, 0.7); text-decoration: none; text-align: center; width: 100%; padding: 7px 0px;}
+.question, .result, .check {display: none;}
+.question h3, .question h2 {margin-top:0;}
+.lastMargin {height: 5px;}
+.alpha60 {background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.6);}
+img.loader {clear: both; display: block; margin: 5px 0px 15px 5px;}
+.check {clear: both;}
+.check h2 {}
+.checkItem { clear: both; display: table; overflow: auto; margin-bottom: 5px; }
+.checkItem span.img{vertical-align:middle; display:table-cell; padding-right: 10px; }
+.checkItem span.img img {display:block;}
+.checkItem h3 { vertical-align:middle; display: table-cell; padding: 0; margin: 0px; }
+a.callToAction {background: none repeat scroll 0% 0% rgb(62, 127, 27); background-image: border: 1px solid rgba(0, 0, 0, 0.2); color: rgb(255, 255, 255); display: block; font-size: 26px; padding: 10px 20px; text-decoration: none; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); text-align: center; width: 80%; border-radius: 30px; box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3) inset;background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #117ed2),color-stop(1, #37abea));
+background-image: -o-linear-gradient(bottom, #117ed2 0%, #37abea 100%);
+background-image: -moz-linear-gradient(bottom, #117ed2 0%, #37abea 100%);
+background-image: -webkit-linear-gradient(bottom, #117ed2 0%, #37abea 100%);
+background-image: -ms-linear-gradient(bottom, #117ed2 0%, #37abea 100%);
+background-image: linear-gradient(to bottom, #117ed2 0%, #37abea 100%);}
+a.callToAction:hover {text-decoration: underline;}
+.countWrapper {display: block; clear: both; font-size: 12px; margin: 5px;}
+.centerIt {margin: 0px auto; text-align: center;}
+.centerIt a {margin: 0px auto;}
+.cta {margin-bottom: 14px;}
+#header {color: #000000; height: 85px; margin: 0px auto; max-width: 985px; padding: 0 0 6px; position: relative; width: 100%;}
+#logo {height: 85px; float:left; width: 300px;}
+#date {font-size: 16px; font-weight: bold; position: absolute; right: 10px; top: 62px; color: #6C6C6C;}
+audio:not([controls]) {display: none; height: 0px;}
+
+a {background: none repeat scroll 0% 0% transparent;}
+a:focus {outline: thin dotted;}
+a:active, a:hover {outline: 0px none;}
+b, strong {font-weight: bold;}
+img {border: 0px none;}
+svg:not(:root) {overflow: hidden;}
+button::-moz-focus-inner, input::-moz-focus-inner {border: 0px none; padding: 0px;}
+.red {color:#fd0c25;}
+/* fb likes */
+.likebar{font-size: 13px; margin: 5px 5px 0 0;float: left;color: #7F7F7F;}
+.likebar:not-children{font-size: 20px}
+.fbblue { color: rgb(59, 89, 152); }
+
+.wrapper{ padding:30px;}
+.content_sec{ width:100%; padding:0; margin:0; background:#fff; border-radius:10px;}
+.content_inn{ padding:30px;overflow:auto;}
+.content_sec h1{ width:100%; float:left; padding:0 0 10px 0; margin:0 0 10px 0; font-size:24px; color:#000000; font-weight:normal; border-bottom:1px solid #eaeaea;}
+.content_sec h2{ width:100%; float:left; padding:0 0 10px 0; margin:0 0 20px 0; font-size:24px; color:#818181; font-weight:normal; border-bottom:1px solid #eaeaea;}
+.detail_block{ width:100%; float:left; padding:0 0 15px 0; margin:0 0 15px 0; border-bottom:1px solid #eaeaea;}
+.detail_left{ width:133px; float:left; padding:0; margin:0 22px 0 0;}
+.detail_left img{ width:100%; max-width:133px; height:auto;}
+.detail_right{ overflow:hidden;}
+.detail_right h3{ width:100%; float:left; padding:0; margin:0 0 10px 0; font-size:24px; color:#3b5998; font-weight:normal;}
+.detail_right h3 a{ color:#3b5998;}
+.detail_right h3 a:hover{ color:#5f7dbc;}
+.detail_right p{ width:100%; float:left; padding:0; margin:0 0 10px 0; font-size:24px; color:#000000; line-height:normal;}
+.detail_right span{ width:100%; float:left; padding:0; margin:0 0 10px 0; font-size:20px; color:#818181;}
+@media (max-width: 480px) {
+    html {
+        -webkit-text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+        text-size-adjust: none;
+    }
+#logo { max-width: 70%; height: auto;}
+.wrapper{ padding:0;}
+.content_inn{ padding:0;}
+.content_sec h1{ font-size:15px;}
+.content_sec h2{ font-size:15px;}
+.detail_left{ width:70px; margin:0 10px 0 0;}
+.detail_right h3{ font-size:15px; font-weight:bold;text-decoration:none;}
+.detail_right p{ font-size:13px;}
+.detail_right span{ font-size:12px;}
+}
+.img-promo
+{
+    max-width:260px;
+    height: 260px;
+    min-width: 200px;
+    background: url('iwatch_main2.png');
+    background-size:cover;
+    background-position: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.discl
+{
+    font-size: 0.6em;
+    line-height: 1.3em;
+    color: gray;
+}
+.btn
+{
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+
+
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    border: 1px solid #00599d;
+
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #00599d;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#61bef2+0,117ed2+100 */
+    background: #61bef2; /* Old browsers */
+    background: -moz-linear-gradient(top,  #61bef2 0%, #117ed2 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#61bef2), color-stop(100%,#117ed2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #61bef2 0%,#117ed2 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #61bef2 0%,#117ed2 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #61bef2 0%,#117ed2 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #61bef2 0%,#117ed2 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61bef2', endColorstr='#117ed2',GradientType=0 ); /* IE6-9 */
+
+    margin: 20px 0px 20px 0px;
+    font-size: 36px;
+    text-decoration: none;
+
+}
+/* * {text-decoration: line-through;} */
